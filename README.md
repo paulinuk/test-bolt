@@ -1,8 +1,12 @@
-# my-bolt-next-tailwind
+# my-bolt-next-tailwind-next15
 
-Minimal Next.js 16 + TypeScript + Tailwind v4 starter.
-Preconfigured to publish on bolt.new (Netlify-backed).
+Next.js 15 + TypeScript + Tailwind v4 starter for bolt.new.
 
-## Run locally
+## Dev (Bolt/WebContainer safe)
+Runs with Webpack (avoids Turbopack WASM issues) on port 3001:
+
 npm install
 npm run dev
+
+## Publish (Netlify-backed)
+Includes netlify.toml with Node 20 + @netlify/plugin-nextjs.
